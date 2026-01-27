@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    <div class="container">
+        <h1>My Dearest Love ❤️</h1>
+        
+        <button id="playMusic" class="btn music-btn">Play Romantic Music 🎵</button>
+        
+        <div class="minion-container">
+            <div class="minion">
+                <div class="minion-body">
+                    <div class="overalls">
+                        <div class="pocket">
+                            <div class="heart" id="heart">❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minion-eyes">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
+                <div class="minion-mouth"></div>
+            </div>
+        </div>
+        
+        <div class="proposal">
+            <h2>Will you be my Valentine?</h2>
+            <div class="buttons">
+                <button class="btn yes-btn" id="yesBtn">YES! ❤️</button>
+                <button class="btn no-btn" id="noBtn">Not really...</button>
+            </div>
+            
+            <div class="confirmation-modal" id="confirmationModal">
+                <h3>Are you sure? 🥺</h3>
+                <p>Click "Absolutely!" to continue...</p>
+                <button class="btn confirm-btn" id="confirmBtn">Absolutely! 💖</button>
+            </div>
+            
+            <div class="final-message" id="finalMessage">
+                <h2>I LOVE YOU! 💕</h2>
+                <p>You've made me the happiest person in the world!<br>Happy Valentine's Day in advance, my love Kpange! 💝</p>
+            </div>
+        </div>
+        
+        <div class="counter">
+            <p>Clicks remaining for surprise: <span id="clickCounter">8</span></p>
+        </div>
+    </div>
+    
+    <audio id="bgMusic" loop preload="auto">
+        <source src="./MyAudio.mp3.ogg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
